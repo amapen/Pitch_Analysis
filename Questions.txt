@@ -1,0 +1,11 @@
+1
+I have filled in the predicted probabilities in the "submission.csv" file.
+
+2
+I first examined the content and basic statistics of the data, and then used k-NN to perform imputation of missing values. I chose to use k-NN because I believed that estimating the spin rate based on similar values of Velo, HorzBreak, and InducedVertBreak would improve accuracy. Next, I created a prediction model. I tried three algorithms: logistic regression, random forest, and SVM. However, all of them seemed to be affected by class imbalance. Therefore, after adjusting for class imbalance and predicting again using the three methods, I achieved high accuracy with the random forest model. Consequently, I utilized this balanced random forest model to make predictions on the "deploy.csv" dataset.
+
+3
+
+
+4
+By adjusting the hyperparameters, I aim to improve the accuracy.
